@@ -1,0 +1,30 @@
+
+<div class="playground">
+  <div class="title">What password?</div>
+  <div class="avatar" *ngIf="!end">
+    <img src="{{currentLevel.avatar}}">
+  </div>
+  <div class="victory" *ngIf="end">
+    <img class="victory-img" src="{{currentLevel.avatar}}">
+  </div>
+  <div class="lvl-name">
+    {{currentLevel.levelName}}
+  </div>
+  <div class="task">
+    {{currentLevel.task}}
+  </div>
+  <ng-container *ngIf="!end">
+    <div class="password">
+      <input [disabled]="showNext" type="password" [(ngModel)]="pass" (keydown.enter)="$event.preventDefault(); checkPassword();">
+      <button class="button-try" type="submit" (click)="checkPassword()">try!</button>
+    </div>
+
+    <div class="message">
+      {{currentMessage}}
+    </div>
+
+    <div class="nextlvl" *ngIf="showNext">
+      <button  class="button-next" (click)="nextLevel()">next level</button>
+    </div>
+  </ng-container>
+</div>
