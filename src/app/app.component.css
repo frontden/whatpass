@@ -16,8 +16,9 @@
 }
 
 .menu {
-    width: 600px;
-    height: 120px;
+    width: 100%;
+    max-width: 600px;
+    height: 180px;
     padding: 25px;
     background: #ABACA5;
     box-sizing: border-box;
@@ -40,7 +41,8 @@
 }
 
 .playground {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     padding-top: 10px;
     height: 650px;
     background: #ABACA5;
@@ -56,7 +58,8 @@ img {
 
 .avatar {
     width: 100px;
-    padding-left: 255px;
+    text-align: center;
+    margin: 0 auto;
     padding-top: 50px;
 }
 
