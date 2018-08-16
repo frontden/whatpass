@@ -9,15 +9,39 @@
 
 .title {
     width: 100%;
-    padding-top: 20px;
     text-align: center;
     font-size: 25px;
     font-weight: bold;
     box-sizing: border-box;
 }
 
+.menu {
+    width: 600px;
+    height: 120px;
+    padding: 25px;
+    background: #ABACA5;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+}
+
+.stats, .rules {
+    padding-bottom: 5px;
+    color: white;
+    text-align: center;
+}
+
+.promt {
+    padding-bottom: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
 .playground {
     width: 600px;
+    padding-top: 10px;
     height: 650px;
     background: #ABACA5;
     box-sizing: border-box;

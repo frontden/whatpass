@@ -1,4 +1,13 @@
-
+<div class="menu">
+  <div class="rules">
+    Вы начинающий хакер. Подберите пароль основываясь на известной вам информации.
+  </div>
+  <div class="promt">
+    <button (click)="help()">help</button>
+    <br/>
+    {{currentPromt}}
+  </div>
+</div>
 <div class="playground">
   <div class="title">What password?</div>
   <div class="avatar" *ngIf="!end">
@@ -27,4 +36,7 @@
       <button  class="button-next" (click)="nextLevel()">next level</button>
     </div>
   </ng-container>
+  <div class="stats" *ngIf="end">
+    хакнуто целей: {{stats.hacked}} попыток: {{stats.attempts}} подсказок использовано: {{stats.promts}}
+  </div>
 </div>
